@@ -41,10 +41,10 @@ const SunsetScene = ({ sunColor, linesColor, starsColor }: ISunsetSceneProps) =>
                             return <Line isMove={false} key={Yshift} start={[Yshift - 15, 0, -4]} end={[Yshift - 15, 0, 10]} color={linesColor}/>
                         })}
 
-                        {Array.apply(null, Array(400)).map((el: any, index: number) => {
+                        {Array.apply(null, Array(400)).map(() => {
                             return <Star Yrange={[10, 15]} color={starsColor}/>
                         })}
-                        {Array.apply(null, Array(50)).map((el: any, index: number) => {
+                        {Array.apply(null, Array(50)).map(() => {
                             return <Star Yrange={[0, 10]} color={starsColor}/>
                         })}
                     </Selection>

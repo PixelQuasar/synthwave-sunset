@@ -1,5 +1,4 @@
 import { Circle } from '@react-three/drei'
-import React from 'react'
 
 interface ISunProps {
     sunColor: string
