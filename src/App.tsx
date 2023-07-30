@@ -1,20 +1,18 @@
-import './App.css'
 import { Canvas } from '@react-three/fiber'
-import Main from './assets/three/Main'
+import Main from './components/Main'
+import SunsetScene from './components/SunsetScene'
 
 function App() {
+  const fogColor = "#00fff2"
+  const linesColor = ""
+  const starsColor = ""
+  const sunColor = ""
+
   return (
     <div id="canvas-container">
       <Canvas dpr={[1, 1]}>
-      <fog attach="fog" args={['#00fff2', 1, 10]} />
-        <Main/>
-        {/* <mesh rotation={[0.5, 0.3, 1]}>
-          <ambientLight intensity={0.5} />
-          <directionalLight color="red" position={[0, 0, 5]}/>
-          <boxGeometry args={[2, 2, 2]} />
-          <meshStandardMaterial />
-          
-        </mesh> */}
+        <fog attach="fog" args={[fogColor, 1, 10]} />
+        <SunsetScene linesColor='#ff00dd' starsColor='#ff96e1' sunColor='#ffffff'/>
       </Canvas>
     </div>
   )
