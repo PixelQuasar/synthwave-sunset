@@ -38,7 +38,7 @@ const SunsetScene = ({ sunColor, linesColor, starsColor }: ISunsetSceneProps) =>
                             return <Line isMove={true} key={Xshift} start={[-20, 0, Xshift - 3]} end={[20, 0, Xshift - 3]} color={linesColor}/>
                         })}
                         {(Array.apply(null, Array(30))).map((el: any, Yshift: number) => {
-                            return <Line isMove={false} key={Yshift} start={[Yshift - 15, 0, -3.6]} end={[Yshift - 15, 0, 10]} color={linesColor}/>
+                            return <Line isMove={false} key={Yshift} start={[Yshift - 15, 0, -4]} end={[Yshift - 15, 0, 10]} color={linesColor}/>
                         })}
 
                         {Array.apply(null, Array(400)).map((el: any, index: number) => {

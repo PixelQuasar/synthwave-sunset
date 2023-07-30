@@ -7,7 +7,7 @@ interface ISunProps {
 
 export default function Sun({sunColor}: ISunProps) {
     return (
-        <mesh position={[0, 0, -4]}>
+        <mesh position={[0, 0, -4.2]}>
             <Circle args={[3, 32, 0, Math.PI]}>
                 <meshBasicMaterial color={sunColor} opacity={1} />
             </Circle>
